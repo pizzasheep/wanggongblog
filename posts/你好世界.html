@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你好，世界 - 网络时好时坏，牛马修修补补</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="/">网络时好时坏，牛马修修补补</a></h1>
+    </header>
+    <main class="post-content">
+        <article>
+            <h1>你好，世界</h1>
+            <div class="post-meta">
+                <time>2026-06-09</time>
+                {% if post.tags %}
+                <span class="tags">
+                    {% for tag in post.tags %}#{{ tag.name }} {% endfor %}
+                </span>
+                {% endif %}
+            </div>
+            <div class="post-body">
+<h1 id="_1">欢迎来到我的博客</h1>
+<p>这是我的第一篇文章。开始写作吧！</p>
+            </div>
+        </article>
+        <div class="back-to-home">
+            <a href="/">← 返回首页</a>
+        </div>
+    </main>
+    <footer>
+        <p>Powered by Static Blog Generator</p>
+    </footer>
+</body>
+</html>
